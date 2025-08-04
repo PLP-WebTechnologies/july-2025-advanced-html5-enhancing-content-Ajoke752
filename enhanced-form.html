@@ -25,18 +25,20 @@
       
         <section id="list-section">
           <h2>List </h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-
+          <dl>
+            <dt>Media</dt>
+            <dd>Description of media item.</dd>
+            <dt>Table</dt>
+            <dd>Description of table item.</dd>
+            <dt>Form</dt>
+            <dd>Description of form item.</dd>
+          </dl>
         </section>
         <section id="media-section">
           <h2>Media</h2>
-          <img src="image.jpg" alt="Sample Image" />
-          <video controls>
-            <source src="video.mp4" type="video/mp4" />
+          <img src="flower.jpeg" alt="Flower Image" width="300" /><br><br>
+          <video controls width="300">
+            <source src="#" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </section>
@@ -64,19 +66,50 @@
             </tbody>
           </table>
         </section>
+
         <section id="form-section">
           <h2>Enhanced Form</h2>
           <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" />
             <br />
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email"  />
             <br />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  />
+            <br />
+            
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" min="0" max="120"  />
             <br />
-            <input type="submit" value="Submit" />
+
+            <label for="Country">Country:</label>
+            <select id="country" name="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+              <option value="other">Other</option>
+            </select>
+            <br />
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            <br />
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br />
+            
+            <label for="file-upload">Upload a file:</label>
+            <input type="file" id="file-upload" name="file-upload"  />
+            <br />
+            <label for="date">Select a date:</label>
+            <input type="date" id="date" name="date" />
+            <br />
+
+
+            <input type="submit" value="Submit" aria-label="Submit Button" />
           </form>
         </section>
     </main>
